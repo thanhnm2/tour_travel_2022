@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Package</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./asserts/css/base.css">
+    <link rel="stylesheet" href="./asserts/css/tours.css">
+    <link rel="stylesheet" href="./asserts/css/reponsive.css">
+    <link rel="shortcut icon" href="./asserts/img/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="app">
+        <!-- MENU--HIDE -->
+        <div class="menuhide">
+            <div class="menuhide__wrap">
+            </div>
+            <div class="nav__bar__menuhide">
+
+                <div class="inner__logo__menuhide">
+                    <a href="./index.html" class="nav__bar__menuhide__logo">
+                        <img src="./asserts/img/logo3.png" alt="">
+                    </a>
+                </div>
+
+                <ul class="nav__bar__menuhide__list">
+                    <li class="nav__bar__menuhide__item col">
+                        <a href="./index.html">Home</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li class="nav__bar__menuhide__item col">
+                        <span>About</span>
+
+                    </li>
+                    <li class="nav__bar__menuhide__item col">
+                        <a href="./tours.html">Package</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li class="nav__bar__menuhide__item col">
+                        <a href="./cagetory.html">Destination</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li class="nav__bar__menuhide__item col">
+                        <span>Blog</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li class="nav__bar__menuhide__item col">
+                        <span>Page</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li class="nav__bar__menuhide__item col">
+                        <span>Contact</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+
+                </ul>
+                <ul class="nav__bar__menuhide__listinfo">
+                    <li class=" col">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+84334829504</span>
+                    </li>
+                    <li class=" col">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>nguyen@gmail.com</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- END-MENUHIDE -->
+        <!-- RegisterForm -->
+        <div class="modal registerform hideModal">
+            <div class="modal_background">
+            </div>
+            <div class="modal_body">
+
+                <div class="auth-form">
+                    <div class="auth-form_container">
+                        <div class="auth-from_header">
+                            <h3 class="auth-form_register">Sign up</h3>
+                            <span class="auth-form_switch">Sign in</span>
+                        </div>
+                        <div class="auth-form_form">
+                            <div class="auth-form_group">
+                                <input type="text" name="username" class="auth-form_input username"
+                                    placeholder="Your user name">
+                            </div>
+                            <div class="auth-form_group">
+                                <input type="email" name="email" class="auth-form_input email" placeholder="Your email">
+                            </div>
+                            <div class="auth-form_group">
+                                <input type="password" name="password" class="auth-form_input password"
+                                    placeholder="Your password">
+                            </div>
+
+                        </div>
+
+                        <div class="auth-form_controls">
+                            <a href="./index.html" class="btn btn_back">Go Back</a>
+                            <button class="btn btn_primary btn_signup">Sign up</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form_social">
+                        <a href="" class="btn btn-with_iconfacebook">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span class="auth-form_social__text">
+                                Connect with Facebook
+                            </span></a>
+                        <a href="" class="btn btn-with_icongoogle">
+                            <span class="google-icon__modifiel">
+                                <img class="google_icon" src="./asserts/img/googleicon.png">
+
+                            </span> <span class="auth-form_social__text">
+                                Connect with Google
+                            </span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- LoginForm -->
+        <div class="modal loginform hideModal">
+            <div class="modal_background">
+            </div>
+            <div class="modal_body">
+
+                <div class="auth-form">
+                    <div class="auth-form_container">
+                        <div class="auth-from_header">
+                            <h3 class="auth-form_register">Sign in</h3>
+                            <span class="auth-form_switch">Sign up</span>
+                        </div>
+                        <div class="auth-form_form">
+
+                            <div class="auth-form_group">
+                                <input type="email" class="auth-form_input email" placeholder="Your email">
+                            </div>
+                            <div class="auth-form_group">
+                                <input type="password" class="auth-form_input password" placeholder="Your password">
+                            </div>
+
+                        </div>
+
+                        <div class="auth-form_controls">
+                            <a href="./index.html" class="btn btn_back">Go Back</a>
+                            <button class="btn btn_primary btn_signin">Sign in</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form_social">
+                        <a href="" class="btn btn-with_iconfacebook">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span class="auth-form_social__text">
+                                Connect with Facebook
+                            </span></a>
+                        <a href="" class="btn btn-with_icongoogle">
+                            <span class="google-icon__modifiel">
+                                <img class="google_icon" src="./asserts/img/googleicon.png">
+
+                            </span> <span class="auth-form_social__text">
+                                Connect with Google
+                            </span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- HEADER -->
+        <div class="header">
+            <div class="grid wide">
+                <div class="header__topbar">
+                    <div class="header__topbar__info icon__fonawsome">
+                        <ul class="header__topbar__info__list">
+                            <li class="header__topbar__info__item"><i class="fa-solid fa-phone"></i>
+                                <span>+84334829504</span>
+                            </li>
+                            <li class="header__topbar__info__item"><i class="fa-regular fa-envelope"></i>
+                                <span>nguyen.nguyenhienth05@gmail.com</span>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <div class="header__topbar__account hide">
+                        <button onclick="showSingupForm();" class="header__topbar__btn  ">Sign Up</button>
+                        <button onclick="showSinginForm();" class="header__topbar__btn  ">Sign In</button>
+                    </div>
+                    <div class="header__topbar__user hide">
+                        <span><i class="fa-solid fa-user "></i></span>
+                        <i class="fa-solid fa-caret-down header__topbar__usericon"></i>
+                        <div class="header__topbar__user__detail">
+                            <ul class="header__topbar__user__list">
+                                <li><Span>Your account</Span></li>
+                                <li><Span class="logout">Log out</Span></li>
+                                <li><Span>View your tour</Span></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="header__topbar__icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- NAV__BAR -->
+        <div class="nav__bar grid wide">
+            <a href="./index.html" class="nav__bar__logo">
+
+                <img src="./asserts/img/logo3.png" alt="">
+
+            </a>
+
+            <div class="nav__bar__menu">
+                <ul class="nav__bar__menu__list">
+                    <li class="nav__bar__menu__item col">
+                        <a href="./index.html">Home</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li class="nav__bar__menu__item col">
+                        <span>About</span>
+                    </li>
+                    <li class="nav__bar__menu__item col">
+                        <a href="./tours.html">Package</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li class="nav__bar__menu__item col">
+                        <a href="./cagetory.html">Destination</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+
+                    <li class="nav__bar__menu__item col">
+                        <span>Blog</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li class="nav__bar__menu__item col">
+                        <span>Page</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li class="nav__bar__menu__item col">
+                        <span>Contact</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__bar__icon">
+                <span onclick="showCagetory();">
+                    <i class="fa-solid fa-ellipsis"></i>
+
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <span class="menu__hide" onclick="showMenu();">
+                    <i class="fa-solid fa-list"></i>
+                </span>
+
+            </div>
+        </div>
+        <!-- CAGETORY -->
+        <div class="cagetory__wrap ">
+            <div class="cagetory">
+
+                <div class="cagetory__content">
+                    <div class="cagetory__content__title">
+                        <span>Cagetory</span>
+                        <span class="cagetory__content__icon" onclick="closeCagetory();">
+                            <i class="fa-regular fa-x"></i>
+                        </span>
+                    </div>
+                    <div class="cagetory__content__list row">
+                        <div class="cagetory__content__item col l-4 m-4 ms-4 s-6">
+                            <div class="cagetory__content__img">
+                                <img src="./asserts/img/cagetory/cate1.svg" alt="">
+                            </div>
+                            <a href="" class="cagetory__content__link">Adventure</a>
+                        </div>
+                        <div class="cagetory__content__item col l-4 m-4 ms-4 s-6">
+                            <div class="cagetory__content__img">
+                                <img src="./asserts/img/cagetory/cate2.svg" alt="">
+                            </div>
+                            <a href="" class="cagetory__content__link">Group Tour</a>
+                        </div>
+                        <div class="cagetory__content__item col l-4 m-4 ms-4 s-6">
+                            <div class="cagetory__content__img">
+                                <img src="./asserts/img/cagetory/cate3.svg" alt="">
+                            </div>
+                            <a href="" class="cagetory__content__link">Couple Tour</a>
+                        </div>
+                        <div class="cagetory__content__item col l-4 m-4 ms-4 s-6">
+                            <div class="cagetory__content__img">
+                                <img src="./asserts/img/cagetory/cate4.svg" alt="">
+                            </div>
+                            <a href="" class="cagetory__content__link">Single Tour</a>
+                        </div>
+                        <div class="cagetory__content__item col l-4 m-4 ms-4 s-6">
+                            <div class="cagetory__content__img">
+                                <img src="./asserts/img/cagetory/cate5.svg" alt="">
+                            </div>
+                            <a href="" class="cagetory__content__link">HoneyMoon</a>
+                        </div>
+                        <div class="cagetory__content__item col l-4 m-4 ms-4 s-6">
+                            <div class="cagetory__content__img">
+                                <img src="./asserts/img/cagetory/cate6.svg" alt="">
+                            </div>
+                            <a href="" class="cagetory__content__link">Music Tour</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- TOP_BANNER -->
+        <div class="top__banner">
+            <div class="top__banner__right">
+                <img src="./asserts/img/bg-highlight2.png" alt="">
+                <div class="top__banner__right__overlay">
+                </div>
+                <div class="top__banner__right__detail">
+                    <span class="top__banner__right__detail__title">
+                        Tour Package Detail
+                    </span>
+                    <div class="top__banner__right__detail__detail">
+                        <span>Home</span>
+                        <span><i class="fa-solid fa-chevron-right"></i></span>
+                        <span><i class="fa-solid fa-chevron-right"></i></span>
+                        <span>Package</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- CONTAINER -->
+        <div class="container grid wide">
+            <div class="container__section__headalpha">
+                <div class="container__section__headalpha__content col l-8">
+                    <div class="section__headalpha__title">
+                        <span>Popular Tour Package</span>
+                    </div>
+                    <div class="section__headalpha__text">
+                        Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus.
+                        Suspendissendt blandit interdum. Sed pellentesque at nunc eget consectetur.
+                    </div>
+                </div>
+                <button class="container__section__headalpha__btn col l-4">
+                    View All Tour
+                </button>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row footer__content__list">
+                    <div class="footer__content col l-4 ms-6 s-6 ">
+                        <div class="footer__content__text">
+                            <span> Duis rutrum nisl urna. Maecenas vel libero faucibus nisi
+                                venenatis hendrerit a id lectus.
+                                Suspendissendt molestie turpis nec lacinia vehicula.
+                            </span>
+                        </div>
+
+                        <div class="footer__content__icon">
+                            <div class="footer__content__follow">Follow Us On:</div>
+                            <div class="content__icon">
+                                <span><i class="fa-brands fa-facebook"></i></span>
+                                <span><i class="fa-brands fa-instagram"></i></span>
+                                <span><i class="fa-brands fa-twitter"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="footer__content col l-4 ms-6 s-6 ">
+                        <div class="footer__content__menu">
+                            <div class="footer__content__menulink">
+                                <div class="footer__content__title">
+                                    <span>Quick Link</span>
+                                </div>
+                                <ul class="footer__list">
+                                    <li class="footer__item">About</li>
+                                    <li class="footer__item">Tour Package</li>
+                                    <li class="footer__item">Destination</li>
+                                    <li class="footer__item">Tour Guide</li>
+                                    <li class="footer__item">Booking Process</li>
+                                    <li class="footer__item">Blog</li>
+                                </ul>
+                            </div>
+                            <div class="footer__content__menutype">
+                                <div class="footer__content__title">
+                                    <span>Tour Type</span>
+                                </div>
+                                <ul class="footer__list">
+                                    <li class="footer__item">Wild & Adventure Tours</li>
+                                    <li class="footer__item">Group Tour</li>
+                                    <li class="footer__item">Seasonal Tours</li>
+                                    <li class="footer__item">Relaxation Tours</li>
+                                    <li class="footer__item">Family Friendly Tours</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer__content gallery col l-4 ms-8 s-8 ">
+
+                        <div class="grid">
+                            <div class="footer__content__title">
+                                <span>Gallery</span>
+                            </div>
+                            <div class="footer__content__gallery">
+                                <img src="./asserts/img/gallery/fg-1.png" alt="" class="footer__content__gallery__img">
+                                <img src="./asserts/img/gallery/fg-2.png" alt="" class="footer__content__gallery__img">
+                                <img src="./asserts/img/gallery/fg-3.png" alt="" class="footer__content__gallery__img">
+                                <img src="./asserts/img/gallery/fg-4.png" alt="" class="footer__content__gallery__img">
+                                <img src="./asserts/img/gallery/fg-5.png" alt="" class="footer__content__gallery__img">
+                                <img src="./asserts/img/gallery/fg-6.png" alt="" class="footer__content__gallery__img">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- FOOTER WIDGET -->
+        <div class="footerwidget">
+            <div class="grid wide">
+                <div class="row footerwidget__content__list">
+                    <div class="footerwidget__content col l-4  m-2 ms-4">
+                        <span class="footerwidget__content__title ">CONTACT US:</span>
+                    </div>
+                    <div class="footerwidget__content col l-2  m-2 ms-4">
+                        <div class="footerwidget__info__item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+84334829504</span>
+                        </div>
+                    </div>
+                    <div class="footerwidget__content col l-2  m-2 ms-4">
+                        <div class="footerwidget__info__item">
+                            <span>nguyen@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="footerwidget__content  col l-4  m-6 s-12">
+                        <div class="footerwidget__info__item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>47 Nguyễn Thị Mười, P4, Q8,Tp.HCM</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- SLICK_SLIDER -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./tours.js"></script>
+    <script type="module" src="./accout.js"></script>
+</body>
+
+</html>
